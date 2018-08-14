@@ -3,5 +3,5 @@ Raphael Leite Campos
 Minhas listas de exercício!
 
 ***Ferramentas de Desenvolvimento***
-Visual Studio 17 - VC++17
+Visual Studio 17 (v141) - VC++17 
 Windows 8.1 Pro
