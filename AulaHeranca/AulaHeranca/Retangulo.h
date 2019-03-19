@@ -6,5 +6,6 @@ class Retangulo :
 public:
 	Retangulo();
 	~Retangulo();
+	std::string desenhar() override;
 };
 

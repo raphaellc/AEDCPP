@@ -25,7 +25,7 @@ void main()
 
 	for (int i = 0; i < 3; i++)
 	{
-		std::cout << formas[i]->desenhar(i) << std::endl;
+		std::cout << formas[i]->desenhar() << std::endl;
 	}
 
 

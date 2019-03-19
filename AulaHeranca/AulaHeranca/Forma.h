@@ -13,7 +13,7 @@ public:
 	Forma();
 	~Forma();
 	Formas f_tipo;
-	std::string desenhar(int forma);
+	virtual std::string desenhar() = 0;
 
 };
 
