@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest_cpp", "UnitTest_cpp\UnitTest_cpp.vcxproj", "{989DB3AF-4A43-4107-A512-40D964106242}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Inventario", "Inventario\Inventario.vcxproj", "{F8E92A08-033F-4C6E-B9B2-593A118806C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{989DB3AF-4A43-4107-A512-40D964106242}.Release|x64.Build.0 = Release|x64
 		{989DB3AF-4A43-4107-A512-40D964106242}.Release|x86.ActiveCfg = Release|Win32
 		{989DB3AF-4A43-4107-A512-40D964106242}.Release|x86.Build.0 = Release|Win32
+		{F8E92A08-033F-4C6E-B9B2-593A118806C7}.Debug|x64.ActiveCfg = Debug|x64
+		{F8E92A08-033F-4C6E-B9B2-593A118806C7}.Debug|x64.Build.0 = Debug|x64
+		{F8E92A08-033F-4C6E-B9B2-593A118806C7}.Debug|x86.ActiveCfg = Debug|Win32
+		{F8E92A08-033F-4C6E-B9B2-593A118806C7}.Debug|x86.Build.0 = Debug|Win32
+		{F8E92A08-033F-4C6E-B9B2-593A118806C7}.Release|x64.ActiveCfg = Release|x64
+		{F8E92A08-033F-4C6E-B9B2-593A118806C7}.Release|x64.Build.0 = Release|x64
+		{F8E92A08-033F-4C6E-B9B2-593A118806C7}.Release|x86.ActiveCfg = Release|Win32
+		{F8E92A08-033F-4C6E-B9B2-593A118806C7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

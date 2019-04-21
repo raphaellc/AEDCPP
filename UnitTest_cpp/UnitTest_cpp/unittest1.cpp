@@ -1,25 +1,24 @@
 #include "stdafx.h"
 #include "CppUnitTest.h"
-
+#include "../Inventario/Item.h"
+#include "../Inventario/Inventario.h"
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
-float tester(float a, float b)
-{
-	return a + b;
-}
 namespace UnitTest_cpp
 {		
-	TEST_CLASS(UnitTest1)
+	TEST_CLASS(teste_Inventario)
 	{
 	public:
-		
-		TEST_METHOD(TestMethod1)
+		Inventario inv;
+		TEST_METHOD(InsereInventario)
 		{
-			// TODO: insira seu código de teste aqui
-			float f = tester(1, 1);
-			float s = 2;
-			Assert::AreEqual(s, f);
+			Item * It = new Item();
+			int result = 1;
+			int atual = inv.insereItem(It);
+			Assert::AreEqual(result, atual);
+
 		}
+	
 
 	};
 }
