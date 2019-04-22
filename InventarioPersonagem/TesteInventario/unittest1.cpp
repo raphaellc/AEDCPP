@@ -15,7 +15,7 @@ namespace UnitTest_cpp
 			Item * It = new Item;
 			int result = 1;
 			int atual = inv.insereItem(It);
-			Assert::AreEqual(result, 1);
+			Assert::AreEqual(result, atual);
 
 		}
 

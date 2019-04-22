@@ -7,8 +7,8 @@ class Inventario
 private:
 	Item * invent[10];
 	int n_maximo_itens = 0, peso = 0;
-	int controle_ID;
-
+	int indice_atual = 0;
+	void atualizaIndice();
 public:
 	Inventario();
 	~Inventario();

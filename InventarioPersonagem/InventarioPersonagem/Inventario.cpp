@@ -2,6 +2,11 @@
 
 
 
+void Inventario::atualizaIndice()
+{
+	this->indice_atual++;
+}
+
 Inventario::Inventario()
 {
 }
@@ -13,6 +18,11 @@ Inventario::~Inventario()
 
 int Inventario::insereItem(Item * i)
 {
+	if (i != nullptr) {
+		invent[this->indice_atual] = i;
+		this->indice_atual++;
+		return 1;
+	}
 	return 0;
 }
 
