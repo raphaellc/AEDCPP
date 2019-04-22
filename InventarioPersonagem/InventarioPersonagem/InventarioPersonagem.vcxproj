@@ -20,13 +20,13 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{C4EEA33B-AC3C-4884-8B71-130C9D4FA633}</ProjectGuid>
-    <RootNamespace>Inventario</RootNamespace>
+    <ProjectGuid>{D477CB3F-A7F1-49A3-A740-A310D68A99B6}</ProjectGuid>
+    <RootNamespace>InventarioPersonagem</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
@@ -115,6 +115,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Inventario.h" />
+    <ClInclude Include="Item.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Inventario.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="jogo.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

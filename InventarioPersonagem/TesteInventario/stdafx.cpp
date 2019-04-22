@@ -1,5 +1,5 @@
 // stdafx.cpp : arquivo de origem que contém apenas as inclusões padrões
-// UnitTest_cpp.pch será o cabeçalho pré-compilado
+// TesteInventario.pch será o cabeçalho pré-compilado
 // stdafx.obj conterá as informações de tipo pré-compiladas
 
 #include "stdafx.h"

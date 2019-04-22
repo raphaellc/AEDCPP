@@ -1,6 +1,4 @@
-
 #pragma once
-#include "../UnitTest_cpp/stdafx.h"
 #include "Item.h"
 #include <fstream>
 
@@ -10,7 +8,7 @@ private:
 	Item * invent[10];
 	int n_maximo_itens = 0, peso = 0;
 	int controle_ID;
-	
+
 public:
 	Inventario();
 	~Inventario();
@@ -21,4 +19,3 @@ public:
 	Item * consultaItemID(int ID); //caso erro retorna nullptr
 	Item * consultaTodosItens(); //caso erro retorna nullptr
 };
-
