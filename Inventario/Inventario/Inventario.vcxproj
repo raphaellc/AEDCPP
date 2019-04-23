@@ -115,6 +115,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ContadorItens.cpp" />
+    <ClCompile Include="Inventario.cpp" />
+    <ClCompile Include="InventarioBin.cpp" />
+    <ClCompile Include="InventarioSeq.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="ItemDAO.cpp" />
+    <ClCompile Include="jogo.cpp" />
+    <ClCompile Include="Personagem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ContadorItens.h" />
+    <ClInclude Include="Inventario.h" />
+    <ClInclude Include="InventarioBin.h" />
+    <ClInclude Include="InventarioSeq.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="ItemDAO.h" />
+    <ClInclude Include="Personagem.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

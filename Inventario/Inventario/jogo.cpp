@@ -1,49 +1,27 @@
 #include "Item.h"
-//Classe Singleton
-class ContadorItens
-{
-private:
-	ContadorItens();
-	int contador;
-	static ContadorItens * _instancia;
-public:
-	static ContadorItens * obtemInstancia();
-	int incrementaContador();
-	int decrementaContador();
-	~ContadorItens();
-};
-
-ContadorItens::ContadorItens()
-{
-}
-
-
-ContadorItens * ContadorItens::obtemInstancia()
-{
-	if (_instancia == nullptr)
-		_instancia = new ContadorItens();
-	return _instancia;
-}
-
-int ContadorItens::incrementaContador()
-{
-	return ++this->contador;
-}
-
-int ContadorItens::decrementaContador()
-{
-	return --this->contador;
-}
-
-ContadorItens::~ContadorItens()
-{
-	this->contador = 0;
-}
+#include "ContadorItens.h"
+#include "Personagem.h"
+#include <iostream>
 
 ContadorItens * ContadorItens::_instancia = nullptr;
 int main()
 {
 	ContadorItens * ci_contItens = ContadorItens::obtemInstancia();
-
+	Personagem * persona = new Personagem;
+	/*Item * it1 = new Item;
+	it1->defineID(ci_contItens->incrementaContador());
+	persona->getInventario()->insereItem(it1);
+	Item * it2 = new Item;
+	it2->defineID(ci_contItens->incrementaContador());
+	persona->getInventario()->insereItem(it2);
+	Item * colecaoItens = persona->getInventario()->consultaTodosItens();
+	std::cout << colecaoItens[0].obtemId() << std::endl;
+	std::cout << colecaoItens[1].obtemId() << std::endl;
+	persona->getInventario()->salvarItens();*/
+	persona->getInventario()->carregarItens();
+	Item * colecaoItens = persona->getInventario()->consultaTodosItens();
+	std::cout << colecaoItens[0].obtemId() << std::endl;
+	std::cout << colecaoItens[1].obtemId() << std::endl;
+	system("pause");
 	return 0;
 }

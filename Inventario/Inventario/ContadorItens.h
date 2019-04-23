@@ -4,7 +4,7 @@ class ContadorItens
 {
 private:
 	ContadorItens();
-	int contador;
+	int contador = 0;
 	static ContadorItens * _instancia;
 public:
 	static ContadorItens * obtemInstancia();

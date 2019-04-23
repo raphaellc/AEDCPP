@@ -16,7 +16,7 @@ ContadorItens * ContadorItens::obtemInstancia()
 
 int ContadorItens::incrementaContador()
 {
-	return ++this->contador;
+	return this->contador++;
 }
 
 int ContadorItens::decrementaContador()
