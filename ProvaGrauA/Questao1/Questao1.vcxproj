@@ -115,6 +115,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Circulo.h" />
+    <ClInclude Include="Forma.h" />
+    <ClInclude Include="Retangulo.h" />
+    <ClInclude Include="Triangulo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Circulo.cpp" />
+    <ClCompile Include="Forma.cpp" />
+    <ClCompile Include="Origem.cpp" />
+    <ClCompile Include="Retangulo.cpp" />
+    <ClCompile Include="Triangulo.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
