@@ -6,7 +6,7 @@ class InventarioBin :
 public:
 	InventarioBin();
 	~InventarioBin();
-	int carregarItens() override; //0 - erro stream; 1- Falta de Espaço; 2- 
+	int carregarItens() override; //0 - erro stream; 1- Sucesso;  
 	int salvarItens() override; // Nullptr - caso erro; Item[] com itens salvos
 };
 

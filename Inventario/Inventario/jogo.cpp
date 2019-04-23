@@ -6,22 +6,38 @@
 ContadorItens * ContadorItens::_instancia = nullptr;
 int main()
 {
+	//Controle de IDs de itens;
 	ContadorItens * ci_contItens = ContadorItens::obtemInstancia();
-	Personagem * persona = new Personagem;
-	/*Item * it1 = new Item;
+	
+	//Cria Personagem com Inventário com Arquivo Binarios
+	Personagem * persona = new Personagem(0);
+	
+	//Cria Personagem com Inventário com Arquivo Sequencial
+	//Personagem * persona = new Personagem(1);
+	
+	// *** Cria Itens e Insere no Inventário ***//
+	Item * it1 = new Item;
 	it1->defineID(ci_contItens->incrementaContador());
 	persona->getInventario()->insereItem(it1);
 	Item * it2 = new Item;
 	it2->defineID(ci_contItens->incrementaContador());
 	persona->getInventario()->insereItem(it2);
+
+	// *** Consulta Itens Inseridos no Inventário *** //
 	Item * colecaoItens = persona->getInventario()->consultaTodosItens();
 	std::cout << colecaoItens[0].obtemId() << std::endl;
 	std::cout << colecaoItens[1].obtemId() << std::endl;
-	persona->getInventario()->salvarItens();*/
+
+	// *** Salva Itens no Arquivo ***//
+	persona->getInventario()->salvarItens();
+	
+	// *** Carrega Itens do Arquivo ***//
 	persona->getInventario()->carregarItens();
-	Item * colecaoItens = persona->getInventario()->consultaTodosItens();
+	colecaoItens = persona->getInventario()->consultaTodosItens();
 	std::cout << colecaoItens[0].obtemId() << std::endl;
 	std::cout << colecaoItens[1].obtemId() << std::endl;
+	
 	system("pause");
+ 	
 	return 0;
 }

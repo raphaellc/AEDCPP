@@ -1,7 +1,6 @@
 #include "InventarioSeq.h"
 
 
-
 InventarioSeq::InventarioSeq()
 {
 }
