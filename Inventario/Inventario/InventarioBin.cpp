@@ -29,7 +29,7 @@ int InventarioBin::carregarItens()
 		return 0;
 	}
 	arquivo.close();
-	return 2;
+	return 1;
 }
 
 int InventarioBin::salvarItens()
@@ -47,5 +47,5 @@ int InventarioBin::salvarItens()
 		return 0;
 	}
 	arquivo.close();
-	return 2;
+	return 1;
 }
