@@ -1,11 +1,11 @@
 #pragma once
-
-class Retangulo 	
+#include "Forma.h"
+class Retangulo : public Forma	
 {
 public:
 	Retangulo();
 	~Retangulo();
 	float base, altura;
-	float calculaArea();
+	float calculaArea() override;
 };
 

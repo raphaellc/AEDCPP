@@ -2,10 +2,12 @@
 #include "Circulo.h"
 #include "Triangulo.h"
 #include "Retangulo.h"
+#include "Forma.h"
 
 void main()
 {
 	float base, altura;
+	Forma * formas[3];
 	Circulo * circulo;
 	Triangulo * triangulo;
 	Retangulo * retangulo;
@@ -25,10 +27,17 @@ void main()
 	retangulo->base = base;
 	retangulo->altura = altura;
 
+	formas[0] = circulo;
+	formas[1] = triangulo;
+	formas[2] = retangulo;
+	
+	for (int i = 0; i<3; i++){
+		std::cout << "Área = " << formas[i]->calculaArea() << std::endl;
+	}
 
-	std::cout << "Area do Circulo " << circulo->calculaArea() << std::endl;
-	std::cout << "Area do Triangulo " << triangulo->calculaArea() << std::endl;;
-	std::cout << "Area do Retangulo " << retangulo->calculaArea() << std::endl;;
+	/*std::cout << "Area do Circulo " << circulo->calculaArea() << std::endl;
+	std::cout << "Area do Triangulo " << triangulo->calculaArea() << std::endl;
+	std::cout << "Area do Retangulo " << retangulo->calculaArea() << std::endl;*/
 
 	system("pause");
 }

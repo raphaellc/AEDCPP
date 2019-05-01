@@ -1,11 +1,11 @@
 #pragma once
-
-class Triangulo
+#include "Forma.h"
+class Triangulo : public Forma
 {
 public:
 	Triangulo();
 	~Triangulo();
 	float base, altura;
-	float calculaArea();
+	float calculaArea() override;
 };
 

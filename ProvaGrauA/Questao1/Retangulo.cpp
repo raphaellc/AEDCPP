@@ -13,5 +13,5 @@ Retangulo::~Retangulo()
 
 float Retangulo::calculaArea()
 {
-	return 0;
+	return this->base * this->altura;
 }

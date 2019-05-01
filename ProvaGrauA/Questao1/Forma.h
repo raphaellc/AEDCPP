@@ -13,7 +13,7 @@ public:
 	Forma();
 	~Forma();
 	Formas f_tipo;
-	virtual std::string desenhar() = 0;
+	virtual float calculaArea() = 0;
 
 };
 

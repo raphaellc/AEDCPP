@@ -21,13 +21,12 @@ int InventarioBin::carregarItens()
 			arquivo.read(reinterpret_cast<char *>(temp_it), sizeof(Item));
 			if (arquivo.gcount())
 				invent[i] = *temp_it;
-			else
-				return 0;
 		}
 	}
 	else {
 		return 0;
 	}
+	arquivo.rdstate();
 	arquivo.close();
 	return 1;
 }
